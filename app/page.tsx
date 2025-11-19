@@ -47,7 +47,7 @@ type Budget = {
 type AgentEvent =
   | { type: "agent_updated"; new_agent: string }
   | { type: "message_output"; message: string }
-  | { type: "tool_output"; output }
+  | { type: "tool_output"; output:any }
   | { type: "final_output"; output: string }
   | { type: "tool_call"; input: string }
   ;
