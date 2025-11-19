@@ -100,7 +100,7 @@ export default function Home() {
     const msg = encodeURIComponent(instruction);
 
     const eventSource = new EventSource(
-      `http://127.0.0.1:8000/agent/chat/stream?msg=${msg}`
+      `${API_URL}/agent/chat/stream?msg=${msg}`
     );
     eventSourceRef.current = eventSource;
 
